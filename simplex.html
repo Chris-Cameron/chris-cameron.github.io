@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Custom Simplex Noise Generator</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+      <script type="module" crossorigin src="/assets/simplex-BIQS9GFU.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/main-DK8ciUaL.css">
+    </head>
+
+    <body>
+        <h1 class="title"> Custom Simplex Noise Generator [UNFINISHED]</h1>
+        <div>
+            <table id = "octaveTable">
+                <thead>
+                    <tr>
+                        <th>Octave</th>
+                        <th>Intensity</th>
+                        <th>Scale</th>
+                        <th>Exponent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id = "addRowButton">Add Row</button>
+            <br></br>
+            <button id = "drawNoiseButton">Generate</button>
+        </div>
+        <canvas id = "resultWindow">Error, please reload</canvas>
+        <br></br>
+        <button id = "exportButton">Export</button>
+    </body>
+
+</html>
