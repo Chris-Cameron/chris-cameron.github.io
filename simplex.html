@@ -15,9 +15,9 @@
                 <thead>
                     <tr>
                         <th>Octave</th>
-                        <th>Intensity (should add to 100)</th>
+                        <th>Intensity (Should add to 100)</th>
                         <th>Scale</th>
-                        <th>Exponent</th>
+                        <th>Exponent (Must be positive) <span id = "exponentInfo" title = "This is applied after each octave to affect the shape. Low exponents cause values to be pushed towards the top with occasional &quot;pits&quot;. High exponents cause values to pushed towards the bottom with ocassional &quot;spikes&quot;">&#9432;</span></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,13 +25,13 @@
                         <td>1</td>
                         <td contenteditable="true">100</td>
                         <td contenteditable="true">100</td>
-                        <td contenteditable="true"></td>
+                        <td contenteditable="true">1</td>
                     </tr>
                 </tbody>
             </table>
             <button id = "addRowButton">Add Row</button>
             <br></br>
-            <button id = "drawNoiseButton">Generate</button>
+            <button id = "drawNoiseButton" title = "test">Generate</button>
         </div>
         <canvas id = "resultWindow">Error, please reload</canvas>
         <br></br>

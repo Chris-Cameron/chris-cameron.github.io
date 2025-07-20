@@ -27,9 +27,10 @@ function drawNoise() {
             let brightness = 0;
             for (let i = 1; i < table.rows.length; i++) {
                 let row = table.rows[i];
-                let scale = Number(row.cells[2].textContent);
                 let intensity = Number(row.cells[1].textContent);
-                brightness += (noise2D(x / scale, y / scale) + 1) * intensity * 1.275;
+                let scale = Number(row.cells[2].textContent);
+                let exponent = Number(row.cells[3].textContent);
+                brightness += Math.pow((noise2D(x / scale, y / scale) + 1) / 2, exponent) * intensity * 2.55;
             }
             ctx.fillStyle = `rgb(${brightness},${brightness},${brightness} )`;
             ctx.fillRect(x, y, 1, 1);
