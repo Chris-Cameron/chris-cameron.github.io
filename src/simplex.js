@@ -39,3 +39,28 @@ function drawNoise() {
 }
 let drawButton = document.getElementById("drawNoiseButton");
 drawButton.addEventListener("click", drawNoise);
+function exportNoise() {
+    let canvas = document.getElementById("resultWindow");
+    canvas.toBlob((blob) => {
+        if (blob) {
+            //Get Image
+            let image = document.createElement("img");
+            let url = URL.createObjectURL(blob);
+            image.src = url;
+            //Download
+            let a = document.createElement("a");
+            a.href = url;
+            a.download = "simplex-noise.png";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            //Revoke URL
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }
+        else {
+            console.error("Canvas empty or export failed");
+        }
+    });
+}
+let exportButton = document.getElementById("exportButton");
+exportButton.addEventListener("click", exportNoise);
