@@ -39,12 +39,14 @@ a.button:hover{
     background-color: #048
 }
 
-
 h1.title{
     text-align: center;
 }
 
-
+p.summary{
+    margin: auto;
+    width: 80%;
+}
 
 p.title{
     text-align: center;
