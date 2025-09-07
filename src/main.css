@@ -1,29 +1,4 @@
 
-body{
-    background-color: #eee;
-    font-family: sans-serif;
-}
-
-canvas{
-    border: 3px solid;
-    border-color: #050;
-    display: block;
-    margin: auto;
-    width: 80%;
-
-}
-
-table{
-    border: 3px solid;
-    margin-left: auto;
-    margin-right:auto;
-    width: 80%;
-}
-
-th, td{
-    border: 1px solid;
-}
-
 a.button{
     background-color: black;
     border-radius: 10px;
@@ -39,7 +14,31 @@ a.button:hover{
     background-color: #048
 }
 
+button.generate{
+    display: table;
+    margin: auto;
+    width: 30%;
+}
+
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+canvas{
+    border: 3px solid;
+    border-color: #050;
+    display: block;
+    margin: auto;
+    width: 80%;
+
+}
+
 h1.title{
+    text-align: center;
+}
+
+h2{
     text-align: center;
 }
 
@@ -48,6 +47,30 @@ p.summary{
     width: 80%;
 }
 
+p.notice{
+    margin: auto;
+    width: 80%;
+    font-size: 12px;
+    text-align:center;
+    margin-top: 5px;
+}
+
 p.title{
     text-align: center;
+}
+
+span{
+    display: table;
+    margin: auto;
+}
+
+table{
+    border: 3px solid;
+    margin-left: auto;
+    margin-right:auto;
+    width: 80%;
+}
+
+th, td{
+    border: 1px solid;
 }

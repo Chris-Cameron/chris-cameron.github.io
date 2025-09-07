@@ -30,6 +30,10 @@ function drawNoise(): void{
     let table = document.getElementById("octaveTable") as HTMLTableElement;
     let noise2D = createNoise2D();
     let canvas = document.getElementById("resultWindow") as HTMLCanvasElement;
+    let width = document.getElementById("canvas-width") as HTMLInputElement;
+    let height = document.getElementById("canvas-height") as HTMLInputElement;
+    canvas.width = width.valueAsNumber;
+    canvas.height = height.valueAsNumber;
     let ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
    for(let x = 0; x < canvas.clientWidth; x++){
