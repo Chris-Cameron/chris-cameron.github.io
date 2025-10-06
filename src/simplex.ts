@@ -36,8 +36,8 @@ function drawNoise(): void{
     canvas.height = height.valueAsNumber;
     let ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
-   for(let x = 0; x < canvas.clientWidth; x++){
-        for(let y = 0; y < canvas.clientHeight; y++){
+   for(let x = 0; x < canvas.width; x++){
+        for(let y = 0; y < canvas.height; y++){
             let brightness = 0;
             for(let i = 1; i < table.rows.length; i++){
                 let row = table.rows[i];
